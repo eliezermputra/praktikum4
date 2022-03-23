@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Menggunakan Efek Fade</title>
+        <script src="jquery-3.6.0.js" ></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".fadein").click(function() {$("#s1").fadeIn("slow") });
+                $(".fadeout").click(function() {$("#s1").fadeOut("slow") });
+                $(".fadeto").click(function() {$("#s1").fadeTo("slow", 0.3) });
+            });
+        </script>
+    </head>
+    <body>
+        <h1> Efek Fade</h1>
+        <p><div id="s1" style="width:230px;height:150px;background-color: yellow;"></div></p>
+        <button class="fadein">Fade In</button>
+        <button class="fadeout">Fade Out</button>
+        <button class="fadeto">Fade to 0.3s</button>
+    </body>
+</html>

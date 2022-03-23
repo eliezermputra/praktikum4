@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Menggunakan Efek Fade</title>
+        <script src="jquery-3.6.0.js" ></script>
+        <script type="text/javascript">
+            $(document).ready(function(){$("div").dblclick(function(){
+                $("#k1").dblclick(function() {$("#k1").addClass("warna1");
+                $("#k2").dblclick(function() {$("#k2").addClass("warna2");
+                $("#k3").dblclick(function() {$("#k3").addClass("warna3");
+                $("#k4").dblclick(function() {$("#k4").addClass("warna4");
+                }) }) }) }) }) });
+                </script>
+                <style>
+                    div{ 
+                        width: 60px; height:60px; background-color: yellow; border: black;
+                        float: left; margin: 5px; cursor: pointer;
+                    }
+                    .warna1{background-color: red;}
+                    .warna2{background-color: antiquewhite;}
+                    .warna3{background-color: aquamarine;}
+                    .warna4{background-color: brown;}
+                </style>
+    </head>
+    <body>
+        <h1> Event Double Click</h1>
+        <p>Klik 2x pada setiap kotaknya untuk merubah warna kotak</p>
+        <div id="k1"></div>
+        <div id="k2"></div>
+        <div id="k3"></div>
+        <div id="k4"></div>
+    </body>
+</html>             

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Tombol tampilkan dan Sembunyikan</title>
+        <script src="jquery-3.6.0.js" ></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".sembunyi").click(function() {$("#s1").hide("slow") });
+                $(".tampil").click(function() {$("#s1").show("slow") });
+            });
+            $(document).ready(function(){
+                $(".sembunyi2").click(function() {$("#s2").hide("slow") });
+                $(".tampil2").click(function() {$("#s2").show("slow") });
+            });
+        </script>
+    </head>
+    <body>
+        <h1> Tombol Tampil dan Sembunyikan  </h1>
+        <button class="sembunyi">sembunyikan</button>
+        <button class="tampil">tampilkan</button>
+        <br>
+        <p><img id="s1" src="hobby33.jpg"> </p>
+        <br>
+        <button class="sembunyi2">sembunyikan</button>
+        <button class="tampil2">tampilkan</button>
+        <br>
+        <p><img id="s2" src="hobby44.jpg"> </p>
+        </body>
+</html>
